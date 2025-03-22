@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serendipity Sojourns - Our Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            width: 100%;
+            position: fixed;
+            background-color: #000000;
+            box-shadow: 5px 5px 5px #B2D430;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            width: 60px;
+            margin: 2vh;
+            margin-left: 8%;
+        }
+
+        .navbar {
+            display: flex;
+            margin-right: 4vh;
+        }
+
+        .navbar a {
+            color: #B2D430;
+            font-size: 18px;
+            padding: 10px 22px;
+            border-radius: 4px;
+            font-weight: 500;   
+            text-decoration: none;
+            transition: ease 0.40s;
+        }
+
+        .navbar a:hover, .navbar a.active {
+            background:#B2D430;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+
+        body {
+            background-color: #191919;
+            color: #000000;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 80px;
+        }
+ 
+        .service-card {
+            background-color: #B2D430;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px;
+            transition: transform 0.2s;
+            text-align: center;
+            box-shadow: #000000 5px 5px 30px;
+        }
+
+        .container-image {
+         overflow: hidden; 
+        }
+
+        .container-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 80px;
+            background-color: #000000;
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .footlinks h4 {
+            margin-top: 30px;
+            font-size: 25px;
+            font-weight: 600;
+            color: #B2D430;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .footlinks ul li a {
+            font-size: 17px;
+            color: #1A8B9D;
+            display: block;
+            transition: ease 0.30s;
+        }
+
+        .footlinks ul li a:hover {
+            transform: translate(6px);
+            color: #B2D430;
+        }
+
+        .end {
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 12px;
+        }
+
+        .end p {
+            font-size: 15px;
+            color: #B2D430;
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+
+ <!-- Header -->
+<nav>
+    <img src="logo.png" class="logo" alt="Logo" title="Serendipity Sojourns">
+    <ul class="navbar">
+        <li>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </li>
+    </ul>
+</nav>
+
+
+<!-- Services -->
+<section class="container">
+    <h1>Services</h1>
+    <div class="text">
+        <p>We have the best services available for you!</p>
+    </div>
+    <div class="row d-flex justify-content-between">
+        <div class="col-md-3">
+            <div class="service-card">
+                <div class="container-image">
+                    <img src="1a.jpg" alt="Flight Services" class="img-fluid">
+                </div>
+                <h4>Flight Services</h4>
+                <p>Arrival and Departure</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="service-card">
+                <div class="container-image">
+                    <img src="2a.jpg" alt="Food Services">
+                </div>
+                <h4>Food Services</h4>
+                <p>Catering</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="service-card">
+                <div class="container-image">
+                    <img src="3a.jpg" alt="Travel Services">
+                </div>
+                <h4>Travel Services</h4>
+                <p>Pick-up/drop</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="service-card">
+                <div class="container-image">
+                    <img src="4a.jpg" alt="Hotel Services">
+                </div>
+                <h4>Hotel Services</h4>
+                <p>Check-in/out</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footlinks">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footlinks">
+            <h4>Connect</h4>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <p>&copy; 2025 Serendipity Sojourns. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
